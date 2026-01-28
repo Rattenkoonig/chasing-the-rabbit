@@ -1,5 +1,0 @@
-[build]
-command = "echo 'Building...'"
-publish = "public"
-functions = "chasing-the-rabbit/netlify/functions"
-
