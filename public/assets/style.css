@@ -1,0 +1,100 @@
+body {
+  background-color: #000000;
+  color: #d7e0d2;
+  font-family: Georgia, serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem 0;
+}
+.clue-image {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(220, 220, 220, 0.35),
+    transparent
+  );
+  margin-top: 1rem;
+}
+
+.sigil {
+  width: 150px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 8px rgba(200, 200, 255, 0.25));
+}
+
+.sigil-main {
+  width: 250px;
+}
+
+.clue-image {
+  max-width: 40%;
+  margin: 2rem auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .clue-image {
+    max-width: 85%;
+  }
+
+  .sigil {
+    width: 120px;
+  }
+
+  .sigil-main {
+    width: 200px;
+  }
+}
+.blocked main {
+  display: none;
+}
+
+.blocked::before {
+  content: "You may have wandered ahead. The forest feels quieter here.";
+  display: block;
+  text-align: center;
+  margin-top: 30vh;
+  font-style: italic;
+}
+
+
